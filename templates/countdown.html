@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2014 {{team['nickname']}} Countdown</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="{{url_for('static', filename='countdown.js')}}"></script>-->
+		<script>
+		
+			/* FEATURES TO ADD?
+			complete database
+			add link back to select team page
+			add footer
+			timeline option -- maybe
+			*/
+			
+			var pcPassed = false;
+			var exPassed = false;
+			var rsPassed = false;
+
+			var msecPerMinute = 1000 * 60;
+			var msecPerHour = msecPerMinute * 60;
+			var msecPerDay = msecPerHour * 24;
+	
+			//get dates from database
+			var pcReport = new Date('{{team['pcReport']}}');		
+			var exOpener = new Date('{{team['exOpener']}}');
+			var rsOpener = new Date('{{team['rsOpener']}}');
+			
+			$(document).ready(function() {
+				updateCountdowns();
+				setInterval(function(){updateCountdowns()}, 1000);
+			});
+			
+			function updateCountdowns() {
+				var now = new Date();
+				if(!pcPassed) {
+					pcPassed = getWait(now, pcReport, "Pitchers and catchers have reported!",
+						"pitchers and catchers report.", "#pcWait");
+				}
+				if(!exPassed) {
+					exPassed = getWait(now, exOpener, "The exhibition season has begun!",
+						"the exhibition season begins.", "#exWait");
+				}
+				if(!rsPassed) {
+					rsPassed = getWait(now, rsOpener, "The regular season has begun!",
+						"the regular season begins.", "#rsWait");
+				}
+			};
+			
+			function getWait(currentTime, eventTime, passedText, comingText, targetObject) {
+				var timeDiff = eventTime - currentTime;
+				if(timeDiff > 0) {
+					var countdownString = "";	
+					leader = true;
+					var days = Math.floor(timeDiff / msecPerDay);
+					timeDiff -= (days * msecPerDay);
+					var hours = Math.floor(timeDiff / msecPerHour);
+					timeDiff -= (hours * msecPerHour);
+					var minutes = Math.floor(timeDiff / msecPerMinute);
+					timeDiff -= (minutes * msecPerMinute);
+					var seconds = Math.floor(timeDiff / 1000);
+
+					var countdownArray = [[days, "day"], [hours, "hour"], 
+										 [minutes, "minute"], [seconds, "second"]];
+
+					for(var i = 0; i < countdownArray.length; i++) {
+						if(countdownString !== "") {
+							leader = false;
+						}
+						countdownString += getCountdownStringComponent(countdownArray[i][0],
+							countdownArray[i][1], leader);
+					}
+
+					countdownString = countdownString.concat(" until " + comingText);
+					$(targetObject).text(countdownString);
+					return false //indicates date has not passed
+				}
+				else {
+					$(targetObject).text(passedText);
+					return true //indicates date has passed
+				}
+			};
+
+			function getCountdownStringComponent(value, unit, leader) {
+				component = "";
+				if(value > 0) {
+					if(!leader) {
+						component += ", ";
+					}
+					component += (value + " " + unit);				
+					if(value > 1) {
+						component += "s";
+					}
+				}
+				return component;
+			}
+			
+		</script>
+	</head>
+	<body style="background-color: {{team['background_color']}};
+				 color: {{team['text_color']}};
+				 font-family: sans-serif;">
+		<h1>2014 {{team['nickname']}} Countdown</h1>
+		<p id="pcWait">time until pitchers and catchers report</p>
+		<p id="exWait">time until exhibition opener</p>
+		<p id="rsWait">time until regular season opener</p>
+		<footer style="color: {{team['text_color']}}; font-size: 0.85em;">
+			<br><br>
+			<a href="{{ url_for('select_team') }}" style="color: {{team['text_color']}};">
+				select a different team</a>
+			<br><br>
+			<hr style="border-color: {{team['text_color']}}">
+			<p>Andrew Desautels, 2014</p>
+		</footer>
+	</body>
+</html>

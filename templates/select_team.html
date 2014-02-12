@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Team Selection</title>
+		<style>
+			* {font-family: sans-serif;}
+		</style>
+	</head>
+	<body>
+		<h1>Choose a team!</h1>
+		<hr/><br/>
+		<form action="{{ url_for('show_countdown') }}">
+			<select name="team" autofocus required value="">
+				<option value="" selected>select team</option>
+				{% for team in teams %}
+					<option value="{{team.abbr}}">{{team.full}}</option>
+				{% endfor %}
+			</select> 
+			<input type="submit" value="Go!"/><input type="reset">
+		</form>
+	</body>
+</html>
