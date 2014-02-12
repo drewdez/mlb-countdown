@@ -1,13 +1,14 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Team Selection</title>
-		<style>
-			* {font-family: sans-serif;}
-		</style>
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 	</head>
-	<body>
-		<h1>Choose a team!</h1>
-		<hr/><br/>
+	<body style="background-color: #555;
+				 color: white;">
+		<h1>2014 MLB Countdown</h1>
+		<hr><br>
+		<p>Select a team below and get excited for the upcoming MLB season!</p>
 		<form action="{{ url_for('show_countdown') }}">
 			<select name="team" autofocus required value="">
 				<option value="" selected>select team</option>
@@ -17,5 +18,9 @@
 			</select> 
 			<input type="submit" value="Go!"/><input type="reset">
 		</form>
+		<footer>
+			<br><br><hr>
+			<p>&copy; 2014 Andrew Desautels</p>
+		</footer>
 	</body>
 </html>
