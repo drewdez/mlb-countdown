@@ -1,5 +1,5 @@
 # imports
-import os, psycopg2
+import os, psycopg2, urlparse
 from flask import Flask, request, g, url_for, render_template
 from contextlib import closing
 
@@ -7,8 +7,15 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 
 def connect_db():
-	conn = psycopg2.connect(database=os.environ.get('DBNAME'),
-		user=os.environ.get('DBUSER'), host=os.environ.get('DBHOST'))
+	urlparse.uses_netloc.append("postgres")
+	url = urlparse.urlparse(os.environ["DATABASE_URL"])
+	conn = psycopg2.connect(
+    database=url.path[1:],
+    user=url.username,
+    password=url.password,
+    host=url.hostname,
+    port=url.port
+	)
 	return conn
 
 def init_db():
