@@ -2,3 +2,4 @@ venv
 *.pyc
 *.sql
 *.sqlite
+set_db_env_vars.sh
