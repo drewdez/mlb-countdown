@@ -1,16 +1,18 @@
 # imports
-import sqlite3
+import os, psycopg2
 from flask import Flask, request, g, url_for, render_template
+#from flask.ext.sqlalchemy import SQLAlchemy
 from contextlib import closing
-
-# configuration
-DATABASE = 'mlb_countdown.sqlite'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/mlb_countdown'
+#db = SQLAlchemy(app)
 
 def connect_db():
-	return sqlite3.connect(app.config['DATABASE'])
+	conn = psycopg2.connect(database=os.environ.get('DBNAME'),
+		user=os.environ.get('DBUSER'), host=os.environ.get('DBHOST'))
+	return conn
 
 def init_db():
 	with closing(connect_db()) as db:
@@ -30,17 +32,19 @@ def teardown_request(exception):
 
 @app.route('/')
 def select_team():
-	cur = g.db.execute('select teamabbr, teamfull from Dates order by teamfull')
+	cur = g.db.cursor()
+	cur.execute("select teamabbr, teamfull from Dates order by teamfull;")
 	teamData = [dict(abbr=row[0], full=row[1]) for row in cur.fetchall()]
 	return render_template('select_team.html', teams=teamData)
 
 @app.route('/countdown')
 def show_countdown():
-	cur = g.db.execute('select * from Dates where teamabbr = (?)', [request.args.get('team')])
+	cur = g.db.cursor()
+	cur.execute("select * from Dates where teamabbr = '%s';" % request.args.get('team'))
 	data = cur.fetchone()
 	teamData = dict(abbr=data[0], full=data[1], nickname=data[2], pcReport=data[3],
 		exOpener=data[4], rsOpener=data[5], background_color=data[6], text_color=data[7])
 	return render_template('countdown.html', team=teamData)
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True)
