@@ -1,8 +1,3 @@
-/* FEATURES TO ADD?
-complete database
-timeline option -- maybe
-*/
-
 var pcPassed = false;
 var exPassed = false;
 var rsPassed = false;
