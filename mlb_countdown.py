@@ -1,13 +1,10 @@
 # imports
 import os, psycopg2
 from flask import Flask, request, g, url_for, render_template
-#from flask.ext.sqlalchemy import SQLAlchemy
 from contextlib import closing
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/mlb_countdown'
-#db = SQLAlchemy(app)
 
 def connect_db():
 	conn = psycopg2.connect(database=os.environ.get('DBNAME'),
@@ -47,4 +44,4 @@ def show_countdown():
 	return render_template('countdown.html', team=teamData)
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run()
