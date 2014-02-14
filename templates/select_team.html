@@ -3,6 +3,8 @@
 	<head>
 		<title>Team Selection</title>
 		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='select_team.js')}}"></script>
 	</head>
 	<body style="background-color: #555;
 				 color: white;">
@@ -10,13 +12,14 @@
 		<hr><br>
 		<p>Select a team below and get excited for the upcoming MLB season!</p>
 		<form action="{{ url_for('show_countdown') }}">
-			<select name="team" autofocus required value="">
-				<option value="" selected>select team</option>
+			<select name="team" required autofocus>
+				<option id="placeholder" value="" selected disabled>select team</option>
 				{% for team in teams %}
 					<option value="{{team.abbr}}">{{team.full}}</option>
 				{% endfor %}
 			</select> 
-			<input type="submit" value="Go!"/><input type="reset">
+			<input type="submit" value="Go!">
+			<input type="reset">
 		</form>
 		<footer>
 			<br><br><hr>
