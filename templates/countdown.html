@@ -5,12 +5,13 @@
 		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="{{url_for('static', filename='countdown.js')}}"></script>
+		<script type="text/javascript" src="{{url_for('static', filename='moment.min.js')}}"></script>
 		<script>
 	
 			//get dates from database
-			var pcReport = new Date('{{team['pcReport']}}');		
-			var exOpener = new Date('{{team['exOpener']}}');
-			var rsOpener = new Date('{{team['rsOpener']}}');
+			var pcReport = moment('{{team['pcReport']}}');		
+			var exOpener = moment('{{team['exOpener']}}');
+			var rsOpener = moment('{{team['rsOpener']}}');
 			
 			$(document).ready(function() {
 				updateCountdowns();
