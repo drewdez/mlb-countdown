@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>2014 {{team['nickname']}} Countdown</title>
+		<title>2015 {{team['nickname']}} Countdown</title>
 		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="{{url_for('static', filename='countdown.js')}}"></script>
 		<script type="text/javascript" src="{{url_for('static', filename='moment.min.js')}}"></script>
 		<script>
-	
+
 			//get dates from database
-			var pcReport = moment('{{team['pcReport']}}');		
+			var pcReport = moment('{{team['pcReport']}}');
 			var exOpener = moment('{{team['exOpener']}}');
 			var rsOpener = moment('{{team['rsOpener']}}');
-			
+
 			$(document).ready(function() {
 				updateCountdowns();
 				setInterval(function(){updateCountdowns()}, 1000);
 			});
-			
+
 		</script>
 	</head>
 	<body style="background-color: {{team['background_color']}};
 				 color: {{team['text_color']}};">
-		<h1>2014 {{team['nickname']}} Countdown</h1>
+		<h1>2015 {{team['nickname']}} Countdown</h1>
 		<hr style="border-color: {{team['text_color']}}"><br>
 		<p id="pcWait">time until pitchers and catchers report</p>
 		<p id="exWait">time until exhibition opener</p>
@@ -33,7 +33,7 @@
 				select a different team</a>
 			<br><br>
 			<hr style="border-color: {{team['text_color']}}">
-			<p>&copy; 2014 Andrew Desautels</p>
+			<p>&copy; 2015 Andrew Desautels</p>
 			<a href="https://github.com/drewdez/mlb-countdown"
 			style="color: {{team['text_color']}}">view source on GitHub</a>
 		</footer>

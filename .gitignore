@@ -3,3 +3,5 @@ venv
 *.sql
 *.sqlite
 set_db_env_vars.sh
+report_dates.html
+time_conversion.xlsx
