@@ -1,0 +1,274 @@
+{
+    "teams": [
+        {
+            "id": "ARI",
+            "sched_id": "ARI",
+            "full_name": "Arizona Diamondbacks",
+            "nickname": "Diamondbacks",
+            "background_color": "#a71930",
+            "text_color": "#000000",
+            "st_league": "cactus"
+        },
+        {
+            "id": "ATL",
+            "sched_id": "ATL",
+            "full_name": "Atlanta Braves",
+            "nickname": "Braves",
+            "background_color": "#01487e",
+            "text_color": "#d60d39",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "BAL",
+            "sched_id": "BAL",
+            "full_name": "Baltimore Orioles",
+            "nickname": "Orioles",
+            "background_color": "#f4632a",
+            "text_color": "#000000",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "BOS",
+            "sched_id": "BOS",
+            "full_name": "Boston Red Sox",
+            "nickname": "Red Sox",
+            "background_color": "#c60c30",
+            "text_color": "#002244",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "CHC",
+            "sched_id": "CHC",
+            "full_name": "Chicago Cubs",
+            "nickname": "Cubs",
+            "background_color": "#0e3386",
+            "text_color": "#d12325",
+            "st_league": "cactus"
+        },
+        {
+            "id": "CHW",
+            "sched_id": "CWS",
+            "full_name": "Chicago White Sox",
+            "nickname": "White Sox",
+            "background_color": "#000000",
+            "text_color": "#ffffff",
+            "st_league": "cactus"
+        },
+        {
+            "id": "CIN",
+            "sched_id": "CIN",
+            "full_name": "Cincinnati Reds",
+            "nickname": "Reds",
+            "background_color": "#c6011f",
+            "text_color": "#ffffff",
+            "st_league": "cactus"
+        },
+        {
+            "id": "CLE",
+            "sched_id": "CLE",
+            "full_name": "Cleveland Indians",
+            "nickname": "Indians",
+            "background_color": "#ed174c",
+            "text_color": "#002b5c",
+            "st_league": "cactus"
+        },
+        {
+            "id": "COL",
+            "sched_id": "COL",
+            "full_name": "Colorado Rockies",
+            "nickname": "Rockies",
+            "background_color": "#333366",
+            "text_color": "#cacdcd",
+            "st_league": "cactus"
+        },
+        {
+            "id": "DET",
+            "sched_id": "DET",
+            "full_name": "Detroit Tigers",
+            "nickname": "Tigers",
+            "background_color": "#10293f",
+            "text_color": "#de4406",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "HOU",
+            "sched_id": "HOU",
+            "full_name": "Houston Astros",
+            "nickname": "Astros",
+            "background_color": "#ff7f00",
+            "text_color": "#072854",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "KCR",
+            "sched_id": "KC",
+            "full_name": "Kansas City Royals",
+            "nickname": "Royals",
+            "background_color": "#15317e",
+            "text_color": "#ffffff",
+            "st_league": "cactus"
+        },
+        {
+            "id": "LAA",
+            "sched_id": "ANA",
+            "full_name": "Los Angeles Angels",
+            "nickname": "Angels",
+            "background_color": "#ce1141",
+            "text_color": "#003262",
+            "st_league": "cactus"
+        },
+        {
+            "id": "LAD",
+            "sched_id": "LA",
+            "full_name": "Los Angeles Dodgers",
+            "nickname": "Dodgers",
+            "background_color": "#005596",
+            "text_color": "#ffffff",
+            "st_league": "cactus"
+        },
+        {
+            "id": "MIA",
+            "sched_id": "MIA",
+            "full_name": "Miami Marlins",
+            "nickname": "Marlins",
+            "background_color": "#000000",
+            "text_color": "#f46634",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "MIL",
+            "sched_id": "MIL",
+            "full_name": "Milwaukee Brewers",
+            "nickname": "Brewers",
+            "background_color": "#c4953b",
+            "text_color": "#012143",
+            "st_league": "cactus"
+        },
+        {
+            "id": "MIN",
+            "sched_id": "MIN",
+            "full_name": "Minnesota Twins",
+            "nickname": "Twins",
+            "background_color": "#042462",
+            "text_color": "#b50131",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "NYM",
+            "sched_id": "NYM",
+            "full_name": "New York Mets",
+            "nickname": "Mets",
+            "background_color": "#004685",
+            "text_color": "#f7742c",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "NYY",
+            "sched_id": "NYY",
+            "full_name": "New York Yankees",
+            "nickname": "Yankees",
+            "background_color": "#1c2841",
+            "text_color": "#ffffff",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "OAK",
+            "sched_id": "OAK",
+            "full_name": "Oakland Athletics",
+            "nickname": "Athletics",
+            "background_color": "#ffbe00",
+            "text_color": "#00483a",
+            "st_league": "cactus"
+        },
+        {
+            "id": "PHI",
+            "sched_id": "PHI",
+            "full_name": "Philadelphia Phillies",
+            "nickname": "Phillies",
+            "background_color": "#ca1f2c",
+            "text_color": "#226aa9",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "PIT",
+            "sched_id": "PIT",
+            "full_name": "Pittsburgh Pirates",
+            "nickname": "Pirates",
+            "background_color": "#ffb40b",
+            "text_color": "#000000",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "STL",
+            "sched_id": "STL",
+            "full_name": "St. Louis Cardinals",
+            "nickname": "Cardinals",
+            "background_color": "#c41e3a",
+            "text_color": "#0a2252",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "SDP",
+            "sched_id": "SD",
+            "full_name": "San Diego Padres",
+            "nickname": "Padres",
+            "background_color": "#b4a76c",
+            "text_color": "#002147",
+            "st_league": "cactus"
+        },
+        {
+            "id": "SFG",
+            "sched_id": "SF",
+            "full_name": "San Francisco Giants",
+            "nickname": "Giants",
+            "background_color": "#f2552c",
+            "text_color": "#000000",
+            "st_league": "cactus"
+        },
+        {
+            "id": "SEA",
+            "sched_id": "SEA",
+            "full_name": "Seattle Mariners",
+            "nickname": "Mariners",
+            "background_color": "#1c8b85",
+            "text_color": "#0c2c56",
+            "st_league": "cactus"
+        },
+        {
+            "id": "TBR",
+            "sched_id": "TB",
+            "full_name": "Tampa Bay Rays",
+            "nickname": "Rays",
+            "background_color": "#00285d",
+            "text_color": "#79bdee",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "TEX",
+            "sched_id": "TEX",
+            "full_name": "Texas Rangers",
+            "nickname": "Rangers",
+            "background_color": "#bd1021",
+            "text_color": "#003279",
+            "st_league": "cactus"
+        },
+        {
+            "id": "TOR",
+            "sched_id": "TOR",
+            "full_name": "Toronto Blue Jays",
+            "nickname": "Blue Jays",
+            "background_color": "#003da5",
+            "text_color": "#ffffff",
+            "st_league": "grapefruit"
+        },
+        {
+            "id": "WAS",
+            "sched_id": "WAS",
+            "full_name": "Washington Nationals",
+            "nickname": "Nationals",
+            "background_color": "#ba122b",
+            "text_color": "#14225a",
+            "st_league": "grapefruit"
+        }
+    ]
+}
