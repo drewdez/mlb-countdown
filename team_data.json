@@ -2,7 +2,7 @@
     "teams": [
         {
             "id": "ARI",
-            "sched_id": "ARI",
+            "sched_id": "dbacks",
             "full_name": "Arizona Diamondbacks",
             "nickname": "Diamondbacks",
             "background_color": "#a71930",
@@ -11,7 +11,7 @@
         },
         {
             "id": "ATL",
-            "sched_id": "ATL",
+            "sched_id": "braves",
             "full_name": "Atlanta Braves",
             "nickname": "Braves",
             "background_color": "#01487e",
@@ -20,7 +20,7 @@
         },
         {
             "id": "BAL",
-            "sched_id": "BAL",
+            "sched_id": "orioles",
             "full_name": "Baltimore Orioles",
             "nickname": "Orioles",
             "background_color": "#f4632a",
@@ -29,7 +29,7 @@
         },
         {
             "id": "BOS",
-            "sched_id": "BOS",
+            "sched_id": "redsox",
             "full_name": "Boston Red Sox",
             "nickname": "Red Sox",
             "background_color": "#c60c30",
@@ -38,7 +38,7 @@
         },
         {
             "id": "CHC",
-            "sched_id": "CHC",
+            "sched_id": "cubs",
             "full_name": "Chicago Cubs",
             "nickname": "Cubs",
             "background_color": "#0e3386",
@@ -47,7 +47,7 @@
         },
         {
             "id": "CHW",
-            "sched_id": "CWS",
+            "sched_id": "whitesox",
             "full_name": "Chicago White Sox",
             "nickname": "White Sox",
             "background_color": "#000000",
@@ -56,7 +56,7 @@
         },
         {
             "id": "CIN",
-            "sched_id": "CIN",
+            "sched_id": "reds",
             "full_name": "Cincinnati Reds",
             "nickname": "Reds",
             "background_color": "#c6011f",
@@ -65,7 +65,7 @@
         },
         {
             "id": "CLE",
-            "sched_id": "CLE",
+            "sched_id": "indians",
             "full_name": "Cleveland Indians",
             "nickname": "Indians",
             "background_color": "#ed174c",
@@ -74,7 +74,7 @@
         },
         {
             "id": "COL",
-            "sched_id": "COL",
+            "sched_id": "rockies",
             "full_name": "Colorado Rockies",
             "nickname": "Rockies",
             "background_color": "#333366",
@@ -83,7 +83,7 @@
         },
         {
             "id": "DET",
-            "sched_id": "DET",
+            "sched_id": "tigers",
             "full_name": "Detroit Tigers",
             "nickname": "Tigers",
             "background_color": "#10293f",
@@ -92,7 +92,7 @@
         },
         {
             "id": "HOU",
-            "sched_id": "HOU",
+            "sched_id": "astros",
             "full_name": "Houston Astros",
             "nickname": "Astros",
             "background_color": "#ff7f00",
@@ -101,7 +101,7 @@
         },
         {
             "id": "KCR",
-            "sched_id": "KC",
+            "sched_id": "royals",
             "full_name": "Kansas City Royals",
             "nickname": "Royals",
             "background_color": "#15317e",
@@ -110,7 +110,7 @@
         },
         {
             "id": "LAA",
-            "sched_id": "ANA",
+            "sched_id": "angels",
             "full_name": "Los Angeles Angels",
             "nickname": "Angels",
             "background_color": "#ce1141",
@@ -119,7 +119,7 @@
         },
         {
             "id": "LAD",
-            "sched_id": "LA",
+            "sched_id": "dodgers",
             "full_name": "Los Angeles Dodgers",
             "nickname": "Dodgers",
             "background_color": "#005596",
@@ -128,7 +128,7 @@
         },
         {
             "id": "MIA",
-            "sched_id": "MIA",
+            "sched_id": "marlins",
             "full_name": "Miami Marlins",
             "nickname": "Marlins",
             "background_color": "#000000",
@@ -137,7 +137,7 @@
         },
         {
             "id": "MIL",
-            "sched_id": "MIL",
+            "sched_id": "brewers",
             "full_name": "Milwaukee Brewers",
             "nickname": "Brewers",
             "background_color": "#c4953b",
@@ -146,7 +146,7 @@
         },
         {
             "id": "MIN",
-            "sched_id": "MIN",
+            "sched_id": "twins",
             "full_name": "Minnesota Twins",
             "nickname": "Twins",
             "background_color": "#042462",
@@ -155,7 +155,7 @@
         },
         {
             "id": "NYM",
-            "sched_id": "NYM",
+            "sched_id": "mets",
             "full_name": "New York Mets",
             "nickname": "Mets",
             "background_color": "#004685",
@@ -164,7 +164,7 @@
         },
         {
             "id": "NYY",
-            "sched_id": "NYY",
+            "sched_id": "yankees",
             "full_name": "New York Yankees",
             "nickname": "Yankees",
             "background_color": "#1c2841",
@@ -173,7 +173,7 @@
         },
         {
             "id": "OAK",
-            "sched_id": "OAK",
+            "sched_id": "athletics",
             "full_name": "Oakland Athletics",
             "nickname": "Athletics",
             "background_color": "#ffbe00",
@@ -182,7 +182,7 @@
         },
         {
             "id": "PHI",
-            "sched_id": "PHI",
+            "sched_id": "phillies",
             "full_name": "Philadelphia Phillies",
             "nickname": "Phillies",
             "background_color": "#ca1f2c",
@@ -191,7 +191,7 @@
         },
         {
             "id": "PIT",
-            "sched_id": "PIT",
+            "sched_id": "pirates",
             "full_name": "Pittsburgh Pirates",
             "nickname": "Pirates",
             "background_color": "#ffb40b",
@@ -200,7 +200,7 @@
         },
         {
             "id": "STL",
-            "sched_id": "STL",
+            "sched_id": "cardinals",
             "full_name": "St. Louis Cardinals",
             "nickname": "Cardinals",
             "background_color": "#c41e3a",
@@ -209,7 +209,7 @@
         },
         {
             "id": "SDP",
-            "sched_id": "SD",
+            "sched_id": "padres",
             "full_name": "San Diego Padres",
             "nickname": "Padres",
             "background_color": "#b4a76c",
@@ -218,7 +218,7 @@
         },
         {
             "id": "SFG",
-            "sched_id": "SF",
+            "sched_id": "giants",
             "full_name": "San Francisco Giants",
             "nickname": "Giants",
             "background_color": "#f2552c",
@@ -227,7 +227,7 @@
         },
         {
             "id": "SEA",
-            "sched_id": "SEA",
+            "sched_id": "mariners",
             "full_name": "Seattle Mariners",
             "nickname": "Mariners",
             "background_color": "#1c8b85",
@@ -236,7 +236,7 @@
         },
         {
             "id": "TBR",
-            "sched_id": "TB",
+            "sched_id": "rays",
             "full_name": "Tampa Bay Rays",
             "nickname": "Rays",
             "background_color": "#00285d",
@@ -245,7 +245,7 @@
         },
         {
             "id": "TEX",
-            "sched_id": "TEX",
+            "sched_id": "rangers",
             "full_name": "Texas Rangers",
             "nickname": "Rangers",
             "background_color": "#bd1021",
@@ -254,7 +254,7 @@
         },
         {
             "id": "TOR",
-            "sched_id": "TOR",
+            "sched_id": "bluejays",
             "full_name": "Toronto Blue Jays",
             "nickname": "Blue Jays",
             "background_color": "#003da5",
@@ -263,7 +263,7 @@
         },
         {
             "id": "WAS",
-            "sched_id": "WAS",
+            "sched_id": "nationals",
             "full_name": "Washington Nationals",
             "nickname": "Nationals",
             "background_color": "#ba122b",
